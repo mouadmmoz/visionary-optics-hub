@@ -67,14 +67,10 @@ const Hero = () => {
                 className="w-full h-[500px] lg:h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
-              <div className="absolute bottom-8 left-8 right-8 text-navy-foreground">
-                <p className="text-xl font-serif font-semibold">Collection Premium</p>
-                <p className="text-sm opacity-80">Montures exclusives et verres haute définition</p>
-              </div>
             </div>
 
             {/* Floating card */}
-            <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-2xl shadow-xl border border-border animate-scale-in z-20">
+            <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-2xl shadow-xl border border-border animate-scale-in z-20">
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
                   <Eye className="w-7 h-7 text-primary" />
