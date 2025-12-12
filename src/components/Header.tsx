@@ -45,10 +45,12 @@ const Header = () => {
             <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">Contact</a>
           </nav>
 
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25">
-            <Phone className="w-4 h-4 mr-2" />
-            Prendre RDV
-          </Button>
+          <a href="tel:+212661504850">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25">
+              <Phone className="w-4 h-4 mr-2" />
+              Appeler
+            </Button>
+          </a>
         </div>
       </div>
     </header>
