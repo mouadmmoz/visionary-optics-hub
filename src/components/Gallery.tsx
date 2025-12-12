@@ -1,32 +1,32 @@
 const galleryImages = [
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipOPxM6_YeyZiZIQQwc4J7WIJo9e44FmRQJUO4mz=w800-h600-k-no",
-    alt: "Intérieur NOURANE OPTIC - Collection principale",
+    src: "https://lh3.googleusercontent.com/p/AF1QipN9jk923Edw-4ubKxoNpWw2-InI__rLZoJ0nZh9=w800-h450-k-no",
+    alt: "Devanture NOURANE OPTIC - Extérieur du magasin",
     span: "col-span-2 row-span-2",
   },
   {
     src: "https://lh3.googleusercontent.com/p/AF1QipOPxM6_YeyZiZIQQwc4J7WIJo9e44FmRQJUO4mz=w400-h400-k-no",
-    alt: "Espace d'accueil du magasin",
+    alt: "Intérieur du magasin - Espace client",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400&h=400&fit=crop",
-    alt: "Collection de montures",
+    src: "https://lh3.googleusercontent.com/p/AF1QipMK6DViZKLqJCDfI1xbd4b9h5L5qABTREkLrk_R=w400-h500-k-no",
+    alt: "Collection de lunettes NOURANE OPTIC",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&h=300&fit=crop",
-    alt: "Lunettes de soleil premium",
+    src: "https://lh3.googleusercontent.com/p/AF1QipN9jk923Edw-4ubKxoNpWw2-InI__rLZoJ0nZh9=w600-h300-k-no",
+    alt: "Façade illuminée du magasin",
     span: "col-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1582142839970-2b9e04b60f65?w=400&h=400&fit=crop",
-    alt: "Présentoir de lunettes",
+    src: "https://lh3.googleusercontent.com/p/AF1QipOPxM6_YeyZiZIQQwc4J7WIJo9e44FmRQJUO4mz=w400-h400-k-no",
+    alt: "Zone d'accueil et conseil",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop",
-    alt: "Montures tendance",
+    src: "https://lh3.googleusercontent.com/p/AF1QipMK6DViZKLqJCDfI1xbd4b9h5L5qABTREkLrk_R=w400-h400-k-no",
+    alt: "Présentoirs de montures",
     span: "",
   },
 ];
