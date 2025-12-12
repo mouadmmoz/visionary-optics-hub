@@ -1,32 +1,42 @@
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&h=400&fit=crop",
-    alt: "Collection de lunettes",
+    src: "https://images.unsplash.com/photo-1582142839970-2b9e04b60f65?w=800&h=600&fit=crop",
+    alt: "Intérieur moderne du magasin",
     span: "col-span-2 row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?w=400&h=400&fit=crop",
-    alt: "Lunettes de soleil",
+    src: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400&h=400&fit=crop",
+    alt: "Collection de montures",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400&h=400&fit=crop",
-    alt: "Examen de vue",
+    src: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=400&fit=crop",
+    alt: "Lunettes de soleil premium",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=600&h=300&fit=crop",
-    alt: "Intérieur du magasin",
+    src: "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=600&h=300&fit=crop",
+    alt: "Présentoir de lunettes",
     span: "col-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=400&h=400&fit=crop",
-    alt: "Montures design",
+    src: "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=400&h=400&fit=crop",
+    alt: "Examen de vue professionnel",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1614715838608-dd527c46231d?w=400&h=400&fit=crop",
-    alt: "Collection premium",
+    src: "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=400&h=400&fit=crop",
+    alt: "Montures design exclusives",
+    span: "",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop",
+    alt: "Lunettes tendance",
+    span: "",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1483120323329-a27af7bc5cc6?w=400&h=400&fit=crop",
+    alt: "Accessoires optiques",
     span: "",
   },
 ];
