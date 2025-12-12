@@ -63,8 +63,8 @@ const Hero = () => {
           <div className="relative">
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-primary/20">
               <img 
-                src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&h=700&fit=crop"
-                alt="Collection de lunettes NOURANE OPTIC"
+                src="https://lh3.googleusercontent.com/p/AF1QipOPxM6_YeyZiZIQQwc4J7WIJo9e44FmRQJUO4mz=w600-h700-k-no"
+                alt="Intérieur NOURANE OPTIC Témara"
                 className="w-full h-[500px] lg:h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />

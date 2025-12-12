@@ -1,8 +1,13 @@
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1582142839970-2b9e04b60f65?w=800&h=600&fit=crop",
-    alt: "Intérieur moderne du magasin",
+    src: "https://lh3.googleusercontent.com/p/AF1QipOPxM6_YeyZiZIQQwc4J7WIJo9e44FmRQJUO4mz=w800-h600-k-no",
+    alt: "Intérieur NOURANE OPTIC - Collection principale",
     span: "col-span-2 row-span-2",
+  },
+  {
+    src: "https://lh3.googleusercontent.com/p/AF1QipOPxM6_YeyZiZIQQwc4J7WIJo9e44FmRQJUO4mz=w400-h400-k-no",
+    alt: "Espace d'accueil du magasin",
+    span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400&h=400&fit=crop",
@@ -10,33 +15,18 @@ const galleryImages = [
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&h=300&fit=crop",
     alt: "Lunettes de soleil premium",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=600&h=300&fit=crop",
-    alt: "Présentoir de lunettes",
     span: "col-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=400&h=400&fit=crop",
-    alt: "Examen de vue professionnel",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=400&h=400&fit=crop",
-    alt: "Montures design exclusives",
+    src: "https://images.unsplash.com/photo-1582142839970-2b9e04b60f65?w=400&h=400&fit=crop",
+    alt: "Présentoir de lunettes",
     span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop",
-    alt: "Lunettes tendance",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1483120323329-a27af7bc5cc6?w=400&h=400&fit=crop",
-    alt: "Accessoires optiques",
+    alt: "Montures tendance",
     span: "",
   },
 ];
@@ -52,10 +42,10 @@ const Gallery = () => {
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
             Découvrez notre
             <br />
-            <span className="text-gradient">univers</span>
+            <span className="text-gradient">boutique</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Plongez dans l'ambiance chaleureuse de notre boutique et explorez nos collections exclusives.
+            Plongez dans l'ambiance chaleureuse de NOURANE OPTIC et explorez nos collections exclusives.
           </p>
         </div>
 
