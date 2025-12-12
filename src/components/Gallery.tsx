@@ -1,32 +1,32 @@
 const galleryImages = [
   {
     src: "https://lh3.googleusercontent.com/p/AF1QipN9jk923Edw-4ubKxoNpWw2-InI__rLZoJ0nZh9=w800-h450-k-no",
-    alt: "Devanture NOURANE OPTIC - Extérieur du magasin",
+    alt: "Façade NOURANE OPTIC Témara",
     span: "col-span-2 row-span-2",
   },
   {
     src: "https://lh3.googleusercontent.com/p/AF1QipOPxM6_YeyZiZIQQwc4J7WIJo9e44FmRQJUO4mz=w400-h400-k-no",
-    alt: "Intérieur du magasin - Espace client",
+    alt: "Espace accueil et conseil",
     span: "",
   },
   {
     src: "https://lh3.googleusercontent.com/p/AF1QipMK6DViZKLqJCDfI1xbd4b9h5L5qABTREkLrk_R=w400-h500-k-no",
-    alt: "Collection de lunettes NOURANE OPTIC",
+    alt: "Vitrine du magasin",
     span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&h=300&fit=crop",
-    alt: "Montures design exclusives",
+    alt: "Nos montures",
     span: "col-span-2",
   },
   {
     src: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=400&fit=crop",
-    alt: "Lunettes de soleil premium",
+    alt: "Lunettes de soleil",
     span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop",
-    alt: "Montures tendance",
+    alt: "Collection tendance",
     span: "",
   },
 ];
