@@ -33,13 +33,12 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl shadow-primary/30 group">
-                Découvrir nos services
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-2 border-foreground/20 hover:border-primary hover:text-primary">
-                Voir la collection
-              </Button>
+              <a href="#services">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl shadow-primary/30 group">
+                  Découvrir nos services
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
             </div>
 
             {/* Stats */}
@@ -63,8 +62,8 @@ const Hero = () => {
           <div className="relative">
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-primary/20">
               <img 
-                src="https://lh3.googleusercontent.com/p/AF1QipOPxM6_YeyZiZIQQwc4J7WIJo9e44FmRQJUO4mz=w600-h700-k-no"
-                alt="Intérieur NOURANE OPTIC Témara"
+                src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&h=700&fit=crop"
+                alt="Collection de lunettes NOURANE OPTIC"
                 className="w-full h-[500px] lg:h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
