@@ -1,5 +1,6 @@
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Reveal } from "@/hooks/use-scroll-reveal";
 
 const reviews = [
   {
@@ -44,11 +45,11 @@ const Reviews = () => {
   return (
     <section id="avis" className="py-24 bg-navy text-navy-foreground relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-skyblue/10 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl animate-blob" />
+      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-skyblue/20 rounded-full blur-3xl animate-blob" style={{ animationDelay: '3s' }} />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+        <Reveal className="text-center mb-16">
           <span className="inline-block text-skyblue font-medium mb-4 tracking-wider uppercase text-sm">
             Témoignages
           </span>
@@ -60,21 +61,21 @@ const Reviews = () => {
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 fill-skyblue text-skyblue" />
+                <Star key={i} className="w-6 h-6 fill-skyblue text-skyblue animate-scale-in" style={{ animationDelay: `${i * 100}ms` }} />
               ))}
             </div>
             <span className="text-2xl font-bold">4.9</span>
             <span className="text-navy-foreground/70">sur Google</span>
           </div>
-        </div>
+        </Reveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.map((review, index) => (
-            <Card 
-              key={index}
-              className="bg-background/10 border-background/20 backdrop-blur-sm hover:bg-background/20 transition-all duration-300"
-            >
-              <CardContent className="p-6">
+            <Reveal key={index} variant="up" delay={index * 80}>
+              <Card
+                className="bg-background/10 border-background/20 backdrop-blur-sm hover:bg-background/20 hover-lift transition-all duration-500 h-full group"
+              >
+                <CardContent className="p-6">
                 <Quote className="w-10 h-10 text-skyblue/50 mb-4" />
                 <div className="flex mb-3">
                   {[...Array(review.rating)].map((_, i) => (
@@ -95,8 +96,9 @@ const Reviews = () => {
                     className="h-5 opacity-70"
                   />
                 </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </Reveal>
           ))}
         </div>
 
