@@ -1,5 +1,6 @@
 import { Eye, Glasses, Sun, Shield, Zap, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Reveal } from "@/hooks/use-scroll-reveal";
 
 const services = [
   {
@@ -38,7 +39,7 @@ const Services = () => {
   return (
     <section id="services" className="py-24 bg-secondary/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <Reveal className="text-center mb-16">
           <span className="inline-block text-primary font-medium mb-4 tracking-wider uppercase text-sm">
             Nos Services
           </span>
@@ -51,27 +52,29 @@ const Services = () => {
             NOURANE OPTIC vous propose une gamme complète de services optiques 
             pour prendre soin de vos yeux au quotidien.
           </p>
-        </div>
+        </Reveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card 
-              key={service.title}
-              className="group bg-card border-border hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 overflow-hidden"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-skyblue flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-8 h-8 text-primary-foreground" />
-                </div>
-                <h3 className="text-xl font-serif font-bold text-foreground mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
-              </CardContent>
-            </Card>
+            <Reveal key={service.title} variant="up" delay={index * 80}>
+              <Card
+                className="group bg-card border-border hover:border-primary/50 hover-lift transition-all duration-500 overflow-hidden relative h-full"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-skyblue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute -top-24 -right-24 w-48 h-48 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <CardContent className="p-8 relative">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-skyblue flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500 shadow-lg shadow-primary/30">
+                    <service.icon className="w-8 h-8 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-serif font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {service.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </Reveal>
           ))}
         </div>
       </div>
