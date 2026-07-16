@@ -71,19 +71,20 @@ const Hero = () => {
 
           {/* Hero image */}
           <Reveal variant="right" delay={200} className="relative">
-            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-primary/30 group">
+            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-primary/30 group animate-tilt">
+              <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-skyblue to-primary rounded-3xl blur-2xl opacity-40 group-hover:opacity-70 transition-opacity duration-700 -z-10" />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
               <img 
                 src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&h=700&fit=crop"
                 alt="Collection de lunettes NOURANE OPTIC"
-                className="w-full h-[500px] lg:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-[500px] lg:h-[600px] object-cover transition-transform duration-700 group-hover:scale-110 animate-zoom-slow"
                 style={{ transform: `translateY(${scrollY * 0.05}px)` }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
             </div>
 
             {/* Floating card */}
-            <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-2xl shadow-xl border border-border animate-scale-in z-20 hover-lift">
+            <div className="absolute -bottom-6 -right-6 p-6 rounded-2xl shadow-xl gradient-border animate-scale-in z-20 hover-lift animate-float">
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center glow-ring">
                   <Eye className="w-7 h-7 text-primary" />
