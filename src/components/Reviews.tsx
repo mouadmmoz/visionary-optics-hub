@@ -90,8 +90,9 @@ const Reviews = () => {
                     <p className="font-semibold">{review.name}</p>
                     <p className="text-sm text-navy-foreground/60">{review.date}</p>
                   </div>
-                  <span className="text-xs font-semibold tracking-wide text-navy-foreground/70">
-                    via Google
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-navy-foreground/80">
+                    <span className="google-g" aria-hidden="true" />
+                    Google
                   </span>
                 </div>
                 </CardContent>
