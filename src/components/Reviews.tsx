@@ -102,9 +102,9 @@ const Reviews = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a 
-            href="https://maps.app.goo.gl/WSnixQVHTjUf7gLs7"
-            target="_blank"
+          <a
+            href="https://www.google.com/maps/place/NOURANE+OPTIC/@33.9282,-6.9066,17z"
+            target="_top"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-skyblue hover:text-skyblue/80 transition-colors font-medium"
           >
