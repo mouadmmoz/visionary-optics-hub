@@ -106,7 +106,12 @@ const Reviews = () => {
             href="https://www.google.com/maps/place/NOURANE+OPTIC/@33.9282,-6.9066,17z"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-skyblue hover:text-skyblue/80 transition-colors font-medium"
+            onClick={(e) => {
+              e.preventDefault();
+              const url = "https://www.google.com/maps/place/NOURANE+OPTIC/@33.9282,-6.9066,17z";
+              (window.top ?? window).open(url, "_blank", "noopener,noreferrer");
+            }}
+            className="inline-flex items-center gap-2 text-skyblue hover:text-skyblue/80 transition-colors font-medium cursor-pointer"
           >
             Voir tous les avis sur Google Maps
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
