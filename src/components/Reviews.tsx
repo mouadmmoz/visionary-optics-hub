@@ -4,40 +4,40 @@ import { Reveal } from "@/hooks/use-scroll-reveal";
 
 const reviews = [
   {
-    name: "Fatima Z.",
+    name: "Kamal Choukri",
     rating: 5,
-    text: "Excellent service ! L'équipe est très professionnelle et à l'écoute. J'ai trouvé des lunettes parfaites pour moi.",
-    date: "Il y a 2 semaines",
+    text: "D'après mon expérience avec plusieurs magasins d'optique, j'affirme que celui ci est le meilleur. Qualité de travail et prix.",
+    date: "Il y a 10 mois",
   },
   {
-    name: "Mohammed A.",
+    name: "MOHAMED ELMOGAZI (Marc)",
     rating: 5,
-    text: "Je recommande vivement NOURANE OPTIC. Très bon accueil, prix raisonnables et large choix de montures.",
-    date: "Il y a 1 mois",
+    text: "Accueil chaleureux, Yassine est vraiment sympathique et serviable. Conseils personnalisés et professionnalisme au rendez-vous. Je recommande vivement cet opticien.",
+    date: "Il y a 2 ans",
   },
   {
-    name: "Sara M.",
+    name: "Mounir B. — Local Guide",
     rating: 5,
-    text: "Service impeccable ! L'examen de vue était très complet et les conseils vraiment personnalisés.",
-    date: "Il y a 1 mois",
+    text: "Extremely helpful, fast, and reasonable prices. Kudos!",
+    date: "Il y a 10 mois",
   },
   {
-    name: "Karim B.",
+    name: "Ghaffour Marwane",
     rating: 5,
-    text: "Boutique moderne avec un personnel accueillant. Les lunettes sont de très bonne qualité.",
-    date: "Il y a 2 mois",
+    text: "Bon accueil Doha",
+    date: "Il y a un an",
   },
   {
-    name: "Amina H.",
+    name: "Sekendaouch Hamid — Local Guide",
     rating: 5,
-    text: "Très satisfaite de mon achat ! Les verres progressifs sont parfaits et le service après-vente est top.",
-    date: "Il y a 3 mois",
+    text: "Service excellent et bon traitement.",
+    date: "Il y a 10 mois",
   },
   {
-    name: "Youssef L.",
+    name: "Yassine Jnioueh",
     rating: 5,
-    text: "NOURANE OPTIC est devenu mon opticien de confiance. Qualité et service au rendez-vous !",
-    date: "Il y a 3 mois",
+    text: "Excellent service et accueil. Je recommande NOURANE OPTIC.",
+    date: "Il y a un mois",
   },
 ];
 
