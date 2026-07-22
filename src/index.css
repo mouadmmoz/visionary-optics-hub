@@ -201,16 +201,6 @@
     animation: gradient-border 6s ease infinite;
   }
 
-  @keyframes intro-fade {
-    0% { opacity: 1; }
-    70% { opacity: 1; }
-    100% { opacity: 0; visibility: hidden; }
-  }
-  .intro-overlay {
-    animation: intro-fade 1.6s ease-in-out forwards;
-    animation-delay: 0.3s;
-  }
-
   @keyframes zoom-slow {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.08); }
