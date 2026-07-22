@@ -208,6 +208,97 @@
   .animate-zoom-slow { animation: zoom-slow 14s ease-in-out infinite; }
 }
 
+/* Intro overlay */
+@keyframes intro-fade-out {
+  0%, 70% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+@keyframes intro-ring-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes intro-title-in {
+  0% { opacity: 0; transform: translateY(20px) scale(0.96); letter-spacing: 0.4em; }
+  100% { opacity: 1; transform: translateY(0) scale(1); letter-spacing: 0.15em; }
+}
+@keyframes intro-sub-in {
+  0% { opacity: 0; transform: translateY(10px); }
+  60% { opacity: 0; }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 50%, hsl(var(--navy)) 0%, #05080f 100%);
+  animation: intro-fade-out 2.2s ease forwards;
+}
+.intro-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+.intro-ring {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  border-top-color: hsl(var(--sky));
+  border-right-color: hsl(var(--primary));
+  animation: intro-ring-spin 1.4s linear infinite;
+  filter: drop-shadow(0 0 20px hsl(var(--primary) / 0.6));
+}
+.intro-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  animation: intro-title-in 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.intro-sub {
+  color: hsl(var(--sky));
+  font-size: 0.85rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: intro-sub-in 1.6s ease forwards;
+}
+
+/* Google G logo (CSS only, no external assets) */
+.google-g {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  font-family: 'Product Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #fff;
+  background:
+    conic-gradient(from 0deg,
+      #4285F4 0deg 90deg,
+      #34A853 90deg 180deg,
+      #FBBC05 180deg 270deg,
+      #EA4335 270deg 360deg);
+  position: relative;
+}
+.google-g::before {
+  content: "G";
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
 html { scroll-behavior: smooth; }
 
 ::selection { background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
