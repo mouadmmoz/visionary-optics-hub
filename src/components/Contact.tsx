@@ -2,6 +2,7 @@ import { Phone, MapPin, Clock, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/hooks/use-scroll-reveal";
+import mapLocation from "@/assets/map-location.jpg";
 
 const Contact = () => {
   return (
