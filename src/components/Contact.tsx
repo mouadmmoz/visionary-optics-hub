@@ -77,23 +77,23 @@ const Contact = () => {
           </Reveal>
 
           {/* Map */}
-          <Reveal variant="right" className="rounded-3xl overflow-hidden shadow-2xl h-[500px] border border-border hover-lift relative">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.1!2d-6.923847!3d33.9136229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7130993e5b247%3A0xc15d739a65ddf7ce!2sNOURANE%20OPTIC!5e0!3m2!1sfr!2sma!4v1700000000000"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
+          <Reveal variant="right" className="rounded-3xl overflow-hidden shadow-2xl h-[500px] border border-border hover-lift relative group">
+            <img
+              src="/src/assets/map-location.jpg"
+              alt="Carte de localisation NOURANE OPTIC, Avenue Mohammed V, Témara"
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="NOURANE OPTIC - Localisation Google Maps"
+              width={1200}
+              height={675}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
             <a
               href="https://www.google.com/maps/place/NOURANE+OPTIC/@33.9136231,-6.9243852,19z"
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute top-4 right-4 z-10 bg-white text-primary text-sm font-medium px-4 py-2 rounded-full shadow-lg hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 bg-white text-primary text-sm font-semibold px-6 py-3 rounded-full shadow-xl hover:bg-primary hover:text-primary-foreground transition-all hover:scale-105 flex items-center gap-2"
             >
+              <MapPin className="w-4 h-4" />
               Ouvrir dans Google Maps
             </a>
           </Reveal>
