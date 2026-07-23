@@ -45,9 +45,9 @@ const reviews = [
 const Reviews = () => {
   return (
     <section id="avis" className="py-24 bg-navy text-navy-foreground relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl animate-blob" />
-      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-skyblue/20 rounded-full blur-3xl animate-blob" style={{ animationDelay: '3s' }} />
+      {/* Background decoration (responsive sizes to avoid mobile overflow) */}
+      <div className="absolute top-0 right-0 w-[220px] h-[220px] sm:w-[300px] md:w-[420px] lg:w-[500px] sm:h-[300px] md:h-[420px] lg:h-[500px] bg-primary/20 rounded-full blur-3xl animate-blob" />
+      <div className="absolute bottom-0 left-0 w-[160px] h-[160px] sm:w-[240px] md:w-[300px] lg:w-[300px] sm:h-[240px] md:h-[300px] lg:h-[300px] bg-skyblue/20 rounded-full blur-3xl animate-blob" style={{ animationDelay: '3s' }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <Reveal className="text-center mb-16">
@@ -77,25 +77,25 @@ const Reviews = () => {
                 className="bg-background/10 border-background/20 backdrop-blur-sm hover:bg-background/20 hover-lift transition-all duration-500 h-full group"
               >
                 <CardContent className="p-6">
-                <Quote className="w-10 h-10 text-skyblue/50 mb-4" />
-                <div className="flex mb-3">
-                  {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-skyblue text-skyblue" />
-                  ))}
-                </div>
-                <p className="text-navy-foreground/90 mb-4 leading-relaxed">
-                  "{review.text}"
-                </p>
-                <div className="flex items-center justify-between pt-4 border-t border-background/20">
-                  <div>
-                    <p className="font-semibold">{review.name}</p>
-                    <p className="text-sm text-navy-foreground/60">{review.date}</p>
+                  <Quote className="w-10 h-10 text-skyblue/50 mb-4" />
+                  <div className="flex mb-3">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-skyblue text-skyblue" />
+                    ))}
                   </div>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-navy-foreground/80">
-                    <span className="google-g" aria-hidden="true" />
-                    Google
-                  </span>
-                </div>
+                  <p className="text-navy-foreground/90 mb-4 leading-relaxed">
+                    "{review.text}"
+                  </p>
+                  <div className="flex items-center justify-between pt-4 border-t border-background/20">
+                    <div>
+                      <p className="font-semibold">{review.name}</p>
+                      <p className="text-sm text-navy-foreground/60">{review.date}</p>
+                    </div>
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-navy-foreground/80">
+                      <span className="google-g" aria-hidden="true" />
+                      Google
+                    </span>
+                  </div>
                 </CardContent>
               </Card>
             </Reveal>
