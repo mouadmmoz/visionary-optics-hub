@@ -32,7 +32,7 @@ const Footer = () => {
                 href="https://www.instagram.com/alae_vision_?igsh=MWh0cjE2NW5vM2Y3cQ==" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
+                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors pointer-events-auto z-50"
                 aria-label="Ouvrir Instagram Nourane Optic"
               >
                 <Instagram className="w-5 h-5" />
