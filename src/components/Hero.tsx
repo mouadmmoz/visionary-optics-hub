@@ -15,13 +15,13 @@ const Hero = () => {
     <section id="accueil" className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-sky-light via-background to-background" />
-      <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl animate-blob" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-skyblue/20 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }} />
-      <div className="absolute top-1/2 left-1/3 w-[300px] h-[300px] bg-primary/5 rounded-full blur-3xl animate-blob" style={{ animationDelay: '4s' }} />
+      <div className="absolute top-20 right-0 w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] bg-primary/10 rounded-full blur-3xl animate-blob" />
+      <div className="absolute bottom-0 left-0 w-[180px] h-[180px] sm:w-[260px] sm:h-[260px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px] bg-skyblue/20 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-1/2 left-1/2 md:left-1/3 -translate-x-1/2 md:-translate-x-0 w-[140px] h-[140px] sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-[300px] bg-primary/5 rounded-full blur-3xl animate-blob" style={{ animationDelay: '4s' }} />
 
       {/* Floating elements */}
-      <div className="absolute top-40 left-10 w-20 h-20 border-2 border-primary/30 rounded-full animate-float" style={{ transform: `translateY(${scrollY * 0.2}px)` }} />
-      <div className="absolute bottom-40 right-20 w-32 h-32 border-2 border-skyblue/30 rounded-full animate-float" style={{ animationDelay: '1s', transform: `translateY(${scrollY * -0.15}px)` }} />
+      <div className="absolute top-40 left-4 sm:left-10 w-16 h-16 border-2 border-primary/30 rounded-full animate-float" style={{ transform: `translateY(${scrollY * 0.2}px)` }} />
+      <div className="absolute bottom-40 right-4 sm:right-20 w-24 h-24 border-2 border-skyblue/30 rounded-full animate-float" style={{ animationDelay: '1s', transform: `translateY(${scrollY * -0.15}px)` }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -83,8 +83,8 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
             </div>
 
-            {/* Floating card */}
-            <div className="absolute -bottom-6 -right-6 p-6 rounded-2xl shadow-xl gradient-border animate-scale-in z-20 hover-lift animate-float">
+            {/* Floating card (hidden on small screens to avoid overflow) */}
+            <div className="hidden sm:block absolute -bottom-6 -right-6 p-6 rounded-2xl shadow-xl gradient-border animate-scale-in z-20 hover-lift animate-float">
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center glow-ring">
                   <Eye className="w-7 h-7 text-primary" />
