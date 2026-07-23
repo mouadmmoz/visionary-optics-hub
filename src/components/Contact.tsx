@@ -80,7 +80,7 @@ const Contact = () => {
           {/* Map */}
           <Reveal variant="right" className="rounded-3xl overflow-hidden shadow-2xl h-[500px] border border-border hover-lift relative group">
             <img
-              src="/src/assets/map-location.jpg"
+              src={mapLocation}
               alt="Carte de localisation NOURANE OPTIC, Avenue Mohammed V, Témara"
               loading="lazy"
               width={1200}
