@@ -1,6 +1,7 @@
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/hooks/use-scroll-reveal";
+import { openInGoogleMaps } from "@/utils/openMaps";
 
 const reviews = [
   {
@@ -102,22 +103,16 @@ const Reviews = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a
-            href="https://www.google.com/maps/place/NOURANE+OPTIC/@33.9282,-6.9066,17z"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => {
-              e.preventDefault();
-              const url = "https://www.google.com/maps/place/NOURANE+OPTIC/@33.9282,-6.9066,17z";
-              (window.top ?? window).open(url, "_blank", "noopener,noreferrer");
-            }}
+          <button
+            onClick={() => openInGoogleMaps("https://maps.app.goo.gl/hZBXPGLUmURe11Dd9")}
             className="inline-flex items-center gap-2 text-skyblue hover:text-skyblue/80 transition-colors font-medium cursor-pointer"
+            aria-label="Voir tous les avis sur Google Maps"
           >
             Voir tous les avis sur Google Maps
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
-          </a>
+          </button>
         </div>
       </div>
     </section>
