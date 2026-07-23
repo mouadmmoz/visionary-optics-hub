@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/hooks/use-scroll-reveal";
 import mapLocation from "@/assets/map-location.jpg";
+import { openInGoogleMaps } from "@/utils/openMaps";
 
 const Contact = () => {
   return (
@@ -88,15 +89,15 @@ const Contact = () => {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
-            <a
-              href="https://www.google.com/maps/place/NOURANE+OPTIC/@33.9136231,-6.9243852,19z"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 bg-white text-primary text-sm font-semibold px-6 py-3 rounded-full shadow-xl hover:bg-primary hover:text-primary-foreground transition-all hover:scale-105 flex items-center gap-2"
+
+            <button
+              type="button"
+              onClick={() => openInGoogleMaps("https://maps.app.goo.gl/hZBXPGLUmURe11Dd9")}
+              className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 bg-white text-primary text-sm font-semibold px-6 py-3 rounded-full shadow-xl hover:bg-primary hover:text-primary-foreground transition-colors flex items-center gap-2"
             >
               <MapPin className="w-4 h-4" />
               Ouvrir dans Google Maps
-            </a>
+            </button>
           </Reveal>
         </div>
       </div>
