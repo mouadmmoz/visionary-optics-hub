@@ -93,7 +93,7 @@ const Contact = () => {
             <button
               type="button"
               onClick={() => openInGoogleMaps("https://maps.app.goo.gl/hZBXPGLUmURe11Dd9")}
-              className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 bg-white text-primary text-sm font-semibold px-6 py-3 rounded-full shadow-xl hover:bg-primary hover:text-primary-foregroun[...]
+              className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 bg-white text-primary text-sm font-semibold px-6 py-3 rounded-full shadow-xl hover:bg-primary hover:text-primary-foreground transition-colors flex items-center gap-2"
             >
               <MapPin className="w-4 h-4" />
               Ouvrir dans Google Maps
