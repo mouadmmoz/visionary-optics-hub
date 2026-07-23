@@ -63,7 +63,7 @@ const Gallery = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-125"
+                className="w-full h-full object-cover transition-transform duration-\[1200ms\] ease-out group-hover:scale-125"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent opacity-40 group-hover:opacity-90 transition-opacity duration-500" />
               <div className="absolute inset-0 ring-0 group-hover:ring-4 ring-primary/50 rounded-2xl transition-all duration-300" />
