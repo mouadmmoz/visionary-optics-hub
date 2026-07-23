@@ -79,7 +79,7 @@ const Contact = () => {
           {/* Map */}
           <Reveal variant="right" className="rounded-3xl overflow-hidden shadow-2xl h-[500px] border border-border hover-lift">
             <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-6.925%2C33.915%2C-6.905%2C33.926&layer=mapnik&marker=33.920567%2C-6.915567"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.1!2d-6.9155670!3d33.9205670!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sNOURANE%20OPTIC!5e0!3m2!1sfr!2sma!4v1700000000000"
               width="100%"
               height="100%"
               style={{ border: 0 }}
