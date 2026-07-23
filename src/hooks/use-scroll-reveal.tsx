@@ -50,7 +50,7 @@ export const Reveal = ({
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+      className={`transition-all duration-\[900ms\] ease-[cubic-bezier(0.22,1,0.36,1)] ${
         visible ? "opacity-100 translate-x-0 translate-y-0 scale-100" : hidden[variant]
       } ${className}`}
       {...rest}
