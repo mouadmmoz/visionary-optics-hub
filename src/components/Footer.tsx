@@ -24,12 +24,16 @@ const Footer = () => {
               <a 
                 href="#" 
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="Lien Facebook Nourane Optic"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/alae_vision_?igsh=MWh0cjE2NW5vM2Y3cQ==" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="Ouvrir Instagram Nourane Optic"
               >
                 <Instagram className="w-5 h-5" />
               </a>
