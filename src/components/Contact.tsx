@@ -77,17 +77,25 @@ const Contact = () => {
           </Reveal>
 
           {/* Map */}
-          <Reveal variant="right" className="rounded-3xl overflow-hidden shadow-2xl h-[500px] border border-border hover-lift">
+          <Reveal variant="right" className="rounded-3xl overflow-hidden shadow-2xl h-[500px] border border-border hover-lift relative">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.1!2d-6.9155670!3d33.9205670!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sNOURANE%20OPTIC!5e0!3m2!1sfr!2sma!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.1!2d-6.923847!3d33.9136229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7130993e5b247%3A0xc15d739a65ddf7ce!2sNOURANE%20OPTIC!5e0!3m2!1sfr!2sma!4v1700000000000"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="NOURANE OPTIC - Localisation"
+              title="NOURANE OPTIC - Localisation Google Maps"
             />
+            <a
+              href="https://www.google.com/maps/place/NOURANE+OPTIC/@33.9136231,-6.9243852,19z"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-4 right-4 z-10 bg-white text-primary text-sm font-medium px-4 py-2 rounded-full shadow-lg hover:bg-primary hover:text-primary-foreground transition-colors"
+            >
+              Ouvrir dans Google Maps
+            </a>
           </Reveal>
         </div>
       </div>
