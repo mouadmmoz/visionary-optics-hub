@@ -1,6 +1,14 @@
 import { Eye, Phone, MapPin, Clock, Facebook, Instagram } from "lucide-react";
 
+const instagramUrl = "https://www.instagram.com/alae_vision_/";
+
 const Footer = () => {
+  const openInstagram = (e: React.MouseEvent) => {
+    e.preventDefault();
+    // Use window.open as a fallback if anchor navigation is intercepted by JS or extensions
+    window.open(instagramUrl, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <footer className="bg-navy text-navy-foreground">
       <div className="container mx-auto px-4 py-16">
@@ -29,7 +37,8 @@ const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="https://www.instagram.com/alae_vision_?igsh=MWh0cjE2NW5vM2Y3cQ==" 
+                href={instagramUrl} 
+                onClick={openInstagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors pointer-events-auto z-50"
